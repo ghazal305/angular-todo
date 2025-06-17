@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form task</title>
+    <link rel="stylesheet" href="todoform.css" />
+  </head>
+  <body>
+    <section class="form">
+      <div class="container">
+        <h1>TO-DO APP</h1>
+        <p>add new task</p>
+        <div class="form-content">
+          <input [(ngModel)]="taskText" placeholder="Add new task" />
+          <button (click)="addTask()">Add Task</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
