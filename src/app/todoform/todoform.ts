@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-todoform',
-  imports: [EventEmitter, CommonModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './todoform.html',
   styleUrl: './todoform.scss',
 })
@@ -14,6 +15,5 @@ export class Todoform {
 
   addTask() {
     this.newTask.emit(this.taskText);
-    this.taskText = '';
   }
 }

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-todo-list',
-  imports: [CommonModule,EventEmitter],
+  imports: [CommonModule],
   templateUrl: './todo-list.html',
   styleUrl: './todo-list.scss'
 })
